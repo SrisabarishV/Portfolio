@@ -10,7 +10,7 @@
   --bg-color: #080808;
   --second-bg-color: #101010;
   --text-color: white;
-  --main-color: #23b0b0;
+  --main-color: #13bebe;
 }
 html {
   font-size: 60%;
@@ -58,7 +58,7 @@ a:active, a:focus {
 }
 span{
   background: linear-gradient(
-    270deg , white 10% , #23b0b0 100% );
+    270deg , rgb(29, 114, 120) 10% , #0fc2c2 100% );
     background-clip: text;
     color: transparent;
 }
@@ -262,6 +262,7 @@ section{
   border: 3px solid var(--main-color);
   padding: 30px 50px;
   border-radius:4rem;
+  
   box-shadow: 0 0 10px var(--main-color);
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -274,12 +275,12 @@ section{
   font-size: 20px;
   color:white;
   margin: 0 0 10px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .timeline-content p{
   color: white;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 22px;
 }
 
