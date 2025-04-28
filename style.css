@@ -58,7 +58,7 @@ a:active, a:focus {
 }
 span{
   background: linear-gradient(
-    270deg , rgb(29, 114, 120) 10% , #0fc2c2 100% );
+    270deg , rgb(46, 146, 154) 10% , #0fc2c2 100% );
     background-clip: text;
     color: transparent;
 }
