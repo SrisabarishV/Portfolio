@@ -1,0 +1,45 @@
+.contact-section {
+    padding: 80px 20px 20px;  /* top | left-right | bottom */
+  background: #0d0d0d;
+  color: #e2e8f0;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #4CC9F0;          /* Light blue heading */
+}
+
+.contact-box {
+  max-width: 600px;
+  margin: auto;
+  background: #0d0d0d;     /* Dark slate card */
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.contact-item {
+  font-size: 18px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e2e8f0;
+}
+
+.contact-item i {
+  font-size: 22px;
+  color: #4CC9F0;     /* Light blue icons */
+}
+
+.contact-item a {
+  color: #4CC9F0;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: white;
+}

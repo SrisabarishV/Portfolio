@@ -1,0 +1,129 @@
+
+
+.education-section {
+  background: #0d0d0d;
+  color: white;
+  padding: 100px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #4CC9F0;
+  margin-bottom: 50px;
+}
+
+/* Timeline center line */
+.edu-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.edu-timeline::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: #4CC9F0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline items */
+.edu-item {
+  width: 50%;
+  padding: 20px 30px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.edu-item .edu-content {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 3px solid #4CC9F0;
+}
+
+/* Dot (common) */
+.edu-item::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  width: 16px;
+  height: 16px;
+  background: #4CC9F0;
+  border-radius: 50%;
+  border: 3px solid #111;
+  box-sizing: border-box;
+}
+
+/* RIGHT SIDE */
+.edu-item.right {
+  left: 50%;
+}
+
+.edu-item.right::before {
+  left: -8px; /* center dot on the line */
+}
+
+/* LEFT SIDE */
+.edu-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.edu-item.left .edu-content {
+  border-left: none;
+  border-right: 3px solid #4CC9F0;
+}
+
+.edu-item.left::before {
+  left: calc(100% - 8px); /* right edge of left-card sits at center */
+}
+
+/* Text styles */
+.edu-degree {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.edu-field {
+  color: #fffcfc;
+  margin-top: 5px;
+}
+
+.edu-year {
+  color: #4CC9F0;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.edu-college {
+  color: #ffffff;
+}
+
+/* MOBILE: stack everything */
+@media (max-width: 700px) {
+  .edu-item {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+  }
+
+  .edu-item.left .edu-content,
+  .edu-item.right .edu-content {
+    border-left: 3px solid #4CC9F0;
+    border-right: none;
+  }
+
+  .edu-timeline::before {
+    left: 15px;
+  }
+
+  .edu-item::before {
+    left: 7px !important;
+    right: auto !important;
+  }
+}

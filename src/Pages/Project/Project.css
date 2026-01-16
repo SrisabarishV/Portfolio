@@ -1,0 +1,109 @@
+.projects-section {
+  padding: 80px 20px;
+  background: #0d0d0d;
+  color: white;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #4CC9F0;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider cards */
+  gap: 25px;
+}
+
+.project-card {
+  background: #111;
+  border-radius: 15px;
+  padding: 25px;
+  border: 2px solid #4CC9F0;
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes buttons to the bottom */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: #1a1a1a;
+  border-color: white;
+  box-shadow: 0 0 12px rgba(76, 201, 240, 0.6);
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #4CC9F0;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* --- New Button Group Styles --- */
+
+.project-btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: auto; /* Ensures buttons align at bottom even if text length varies */
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1; /* Makes buttons equal width */
+}
+
+/* Demo Button Style */
+.btn-demo {
+  background: #4CC9F0;
+  color: black;
+  border: 2px solid #4CC9F0;
+}
+
+.btn-demo:hover {
+  background: white;
+  border-color: white;
+  color: black;
+}
+
+/* GitHub Button Style */
+.btn-github {
+  background: transparent;
+  color: #4CC9F0;
+  border: 2px solid #4CC9F0;
+}
+
+.btn-github:hover {
+  background: #4CC9F0;
+  color: black;
+}
+
+/* GitHub Icon Image */
+.git-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(71%) sepia(61%) saturate(452%) hue-rotate(174deg) brightness(98%) contrast(92%); /* Matches #4CC9F0 color roughly */
+}
+
+.btn-github:hover .git-icon {
+  filter: brightness(0); /* Turns icon black on hover */
+}
