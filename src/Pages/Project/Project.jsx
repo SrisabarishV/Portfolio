@@ -2,17 +2,17 @@ import "./Project.css";
 
 const Projects = () => {
   const projectList = [
+     {
+      title: "YouTube-Clone",
+      tech: "React Js",
+      link: "https://github.com/SrisabarishV/YouTube-React",
+      demo: "https://srisabarishv.github.io/YouTube-React/", // Replace with actual live link if you have one
+    },
     {
       title: "Appointment Booking System",
       tech: "ASP.NET MVC",
       link: "https://github.com/SrisabarishV/AppointmentBookingSystem",
       demo: null, // No demo link available
-    },
-    {
-      title: "MVC Authenticator",
-      tech: ".NET + Authentication",
-      link: "https://github.com/SrisabarishV/Auth-mvc",
-      demo: null,
     },
     {
       title: "QR Code Generator",
@@ -32,12 +32,7 @@ const Projects = () => {
       link: "https://github.com/SrisabarishV/Integrate_Mvc_Api",
       demo: null,
     },
-    {
-      title: "YouTube-Clone",
-      tech: "React Js",
-      link: "https://github.com/SrisabarishV/YouTube-React",
-      demo: "https://srisabarishv.github.io/YouTube-React/", // Replace with actual live link if you have one
-    },
+   
   ];
 
   return (
